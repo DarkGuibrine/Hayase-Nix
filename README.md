@@ -14,7 +14,7 @@ Add the flake as an input in your configuration:
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     hayase = {
-      url = "github:cloudglides/hayase-nix";
+      url = "github:DarkGuibrine/hayase-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -73,4 +73,5 @@ nix build .#default
 ```
 
 Commit the generated `flake.lock` when inputs change to keep builds reproducible.
+# Hayase-Nix
 # Hayase-Nix
